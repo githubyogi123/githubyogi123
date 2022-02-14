@@ -1,0 +1,41 @@
+package com.yoga;
+
+ interface MyFunctional{
+	
+	 void addBill(int food , int tax);
+}
+ 
+
+ /* class InheritFunctional implements MyFunctional{
+  
+  @Override public void addBill(int food, int tax) { // TODO Auto-generated
+  System.out.println("Total Bill -->> "+(food+tax));
+  
+  }
+  
+  }*/
+ 
+
+public class LamdaPractice {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		//MyFunctional myfun=new InheritFunctional();
+		
+		
+		/*MyFunctional myfun= new MyFunctional() {
+			
+			@Override
+			public void addBill(int food, int tax) {
+				System.out.println("Total Bill -->> "+(food+tax));
+				
+			}
+		};*/
+		MyFunctional myfun=(food,tax)-> 			
+			System.out.println("Total Bill -->> "+(food+tax));
+		
+		myfun.addBill(800, 200);
+	}
+
+}

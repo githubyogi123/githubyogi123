@@ -1,0 +1,16 @@
+package com.yoga;
+
+ interface MyFunctional{
+	
+	 void addBill();
+}
+
+public class LamdaPractice {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+
+	}
+
+}

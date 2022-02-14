@@ -1,0 +1,26 @@
+package com.yoga;
+
+ interface MyFunctional{
+	
+	 void addBill();
+}
+ 
+ class InheritFunctiona implements MyFunctional{
+
+	@Override
+	public void addBill() {
+		// TODO Auto-generated method stub
+		
+	}
+	 
+ }
+
+public class LamdaPractice {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+
+	}
+
+}

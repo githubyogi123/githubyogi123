@@ -1,0 +1,40 @@
+package com.yoga;
+
+import java.util.Arrays;
+import java.util.stream.IntStream;
+import java.util.stream.Stream;
+
+public class StreamPractice {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		//IntStream.range(1, 10)
+		//.forEach(System.out::println);
+		
+		IntStream.range(1, 5)
+		.skip(3)
+		.forEach(x->System.out.println(x));
+		
+		IntStream.range(1, 5)
+		.skip(3)
+		.forEach(System.out::println);
+		
+		IntStream.range(1, 5)
+		.sum();
+		System.out.println();
+		
+		Stream.of("four","three","three")
+		.distinct()
+		.findFirst()
+		.ifPresent(System.out::print);
+		
+		String[] numbers= {"four","three","three"};
+		
+		Arrays.stream(numbers)
+		.sorted()
+		.distinct()
+		.forEach(System.out::println);
+	}
+
+}

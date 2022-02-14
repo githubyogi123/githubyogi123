@@ -1,0 +1,32 @@
+package com.yoga;
+
+import java.util.stream.IntStream;
+import java.util.stream.Stream;
+
+public class StreamPractice {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		//IntStream.range(1, 10)
+		//.forEach(System.out::println);
+		
+		IntStream.range(1, 5)
+		.skip(3)
+		.forEach(x->System.out.println(x));
+		
+		IntStream.range(1, 5)
+		.skip(3)
+		.forEach(System.out::println);
+		
+		IntStream.range(1, 5)
+		.sum();
+		System.out.println();
+		
+		Stream.of("one","two","three","three")
+		.distinct()
+		.findAny()
+		.ifPresent(System.out::print);
+	}
+
+}
